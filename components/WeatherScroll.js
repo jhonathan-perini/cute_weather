@@ -20,8 +20,8 @@ if(data && data.weather){
             <Image style={styles.imgContainer} source={{uri: img}}/>
             <View style={{marginLeft: 30, }}>
                 <Text style={styles.currentContainerHeader}>{moment(data.dt * 1000).format('dddd')}</Text>
-                <Text style={styles.currentContainerText}>Night - {data.temp.night}°C</Text>
-                <Text style={styles.currentContainerText}>Day - {data.temp.day}°C</Text>
+                <Text style={styles.currentContainerText}>Night: {Math.round(data.temp.night)}°C</Text>
+                <Text style={styles.currentContainerText}>Day: {Math.round(data.temp.day)}°C</Text>
             </View>
             
         </View>

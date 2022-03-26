@@ -25,8 +25,8 @@ return (
 
             <Text style={styles.currentContainerHeader}>{moment(forecastItem.dt * 1000).format('ddd')}</Text>
             <Image style={styles.imgContainer} source={{uri: img}}/>
-            <Text style={styles.currentContainerText}>Night - {forecastItem.temp.night}°C</Text>
-            <Text style={styles.currentContainerText}>Day - {forecastItem.temp.day}°C</Text>
+            <Text style={styles.currentContainerText}>Night: {Math.round(forecastItem.temp.night)}°C</Text>
+            <Text style={styles.currentContainerText}>Day: {Math.round(forecastItem.temp.day)}°C</Text>
     
     </View>
 )

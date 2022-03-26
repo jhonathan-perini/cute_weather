@@ -28,8 +28,8 @@ console.log(timezone)
             <Image style={styles.weatherConditionImg} source={{uri: img}} />
                <View style={{ alignItems: 'center',
         justifyContent: 'center'}}>
-                <Text style={styles.temperatureText}>{current.temp}°C</Text>
-                <Text style={styles.temperatureSubHeading}>H: {data.daily[0].temp.max}°C      M:{data.daily[0].temp.min}°C</Text>
+                <Text style={styles.temperatureText}>{Math.round(current.temp)}°C</Text>
+                <Text style={styles.temperatureSubHeading}>H: {Math.round(data.daily[0].temp.max)}°C      M: {Math.round(data.daily[0].temp.min)}°C</Text>
                 </View>
                 </View>
              
@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
     temperatureContainer: {
         flexDirection: 'row',
         alignItems: 'center',
+        justifyContent: 'center'
     }, 
     weatherConditionImg: {
         resizeMode: 'contain',
