@@ -2,10 +2,23 @@
   "expo": {
     "name": "cute_weather",
     "slug": "cute_weather",
+    "splash": {
+      "image": "./assets/splash.png"
+    },
+    "icon": "./assets/img/Cloudy.png",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ]
+    
   },
+  "ios": {
+    "infoPlist": {
+      "NSLocationAlwaysAndWhenInUseUsageDescription": "The app needs permission to access your location, if you want to be located on the map"
+    }
+  
+  },
+  
+  
   "name": "cute_weather"
 }
